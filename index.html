@@ -4,17 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minions-talk</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comic+Sans+MS&display=swap">
     <style>
-        #Heading{
+        #Heading {
             width: 100%;
-            height: 50px;
+            height: 80px;
             background-color: goldenrod;
+        }
+
+        #Heading h1 {
+            padding: 16px;
+            margin: 10px;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        textarea {
+            width: 90%;
+            height: 10vh;
+            display: block;
+            padding: 1rem;
+            margin: 1rem;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        #btn-translate {
+            width: 130px;
+            height: 60px;
+            background-color: goldenrod;
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid goldenrod;
+            border-radius: 6px;
+            color: black;
+            font-size: 1rem;
+            font-family: 'Comic Sans MS', cursive;
+            font-weight: bold;
+        }
+
+        #output {
+            border: 1px solid black;
+            height: 10vh;
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        body h1 h2 h3 h4 h5 h6 {
+            font-family: 'Comic Sans MS', cursive;
         }
     </style>
 </head>
 <body>
-    <div id ="Heading">
+    <div id="Heading">
         <h1>Minions talk</h1>
     </div>
+    <textarea id="txt-input" placeholder="Put your text here and we will convert it into minion's language"></textarea>
+    <button id="btn-translate">Let's translate</button>
+    <div id="output">Output will come here 👇</div>
+    <script src="app.js"></script>
 </body>
 </html>
